@@ -29,7 +29,7 @@
         -ms-flex-pack: center;
             justify-content: center;
 }
-video {
+iframe {
     padding: 1%;
     width: 25%;
     height: 15%;
@@ -38,7 +38,7 @@ video {
     transition: 0.5s ease-in-out;
     opacity: 40%;
 }
-video:hover{
+iframe:hover{
     opacity:100%;
 }
 #main {
