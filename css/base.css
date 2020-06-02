@@ -1,21 +1,40 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 *{
     background-color: #0F0A05;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     overflow: visible;
     font-family: 'Exo 2', verdana, sans-serif;
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 video {
     padding: 1%;
     width: 25%;
     height: 15%;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     opacity: 40%;
 }
@@ -23,16 +42,24 @@ video:hover{
     opacity:100%;
 }
 #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     bottom: 0;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     height: 8%;
     width: 100%;
     padding:2%;
     background-color: #05070F;
     color: #e3d985;
+    -webkit-transition : 1.5s ease-in-out;
+    -o-transition : 1.5s ease-in-out;
     transition : 1.5s ease-in-out;
 }
 #main:hover {
@@ -61,7 +88,10 @@ a:hover {
     }
     .container {
         min-height: 100%;
-        flex-flow: column wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
     }
     video {
         width:100%;
@@ -89,7 +119,10 @@ a:hover {
     }
     .container {
         min-height: 100%;
-        flex-flow: column wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
     }
     video {
         width:100%;
