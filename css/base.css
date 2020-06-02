@@ -7,11 +7,21 @@
     overflow: visible;
 }
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    position: -webkit-sticky;
     position: sticky;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
@@ -24,11 +34,15 @@ img[alt=logo] {
     width: 7%;
     background-color: transparent;
     border-radius: 50%;
+    -webkit-transition : 5s ease;
+    -o-transition : 5s ease;
     transition : 5s ease;
 }
 img[alt=logo]:hover {
     opacity:90%;
-    transform: rotate(0.5turn);
+    -webkit-transform: rotate(0.5turn);
+        -ms-transform: rotate(0.5turn);
+            transform: rotate(0.5turn);
     cursor: pointer;
 }
 h1 {
@@ -40,10 +54,13 @@ h1 {
     -webkit-text-stroke: 1.8px #e3d985;
     -webkit-text-fill-color: #1B613E;
     background-color: transparent;
+    -webkit-transition : 5s ease;
+    -o-transition : 5s ease;
     transition : 5s ease;
 }
 h1:hover {
-    transform: rotate3d(11, 52.0, 30.0, -10deg);
+    -webkit-transform: rotate3d(11, 52.0, 30.0, -10deg);
+            transform: rotate3d(11, 52.0, 30.0, -10deg);
     cursor: pointer;
 }
 
@@ -73,7 +90,9 @@ iframe {
 }
 iframe:hover{
     opacity:100%;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 #main {
     display: -webkit-box;
@@ -160,6 +179,7 @@ a:hover {
         overflow: visible;
         min-height: 100%;
     }
+}
     header {
         width: 100vw;
         height: 10vh;
@@ -171,6 +191,8 @@ a:hover {
         width: 80px;
         background-color: transparent;
         border-radius: 50%;
+        -webkit-transition : 5s ease;
+        -o-transition : 5s ease;
         transition : 5s ease;
     }
     .container {
@@ -204,11 +226,21 @@ a:hover {
         min-height: 100%;
     }
     header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: column wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        position: -webkit-sticky;
         position: sticky;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         top: 0;
         left: 0;
         width: 100%;
@@ -220,6 +252,8 @@ a:hover {
         width: 80px;
         background-color: transparent;
         border-radius: 50%;
+        -webkit-transition : 5s ease;
+        -o-transition : 5s ease;
         transition : 5s ease;
     }
     h1 {
