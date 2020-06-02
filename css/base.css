@@ -1,17 +1,13 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 *{
     background-color: #0F0A05;
+    font-family: 'Exo 2', verdana, sans-serif;
     margin: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     overflow: visible;
-    font-family: 'Exo 2', verdana, sans-serif;
+}
+h1 {
+    background-color: transparent;
 }
 
 .container {
