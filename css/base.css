@@ -155,7 +155,7 @@ a:hover {
         font-size: 2em;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
     * {
         overflow: visible;
         min-height: 100%;
@@ -168,8 +168,7 @@ a:hover {
         background-color: #05070F;
     }
     img[alt=logo] {
-        height: 10vh;
-        width: 20vw;
+        width: 80px;
         background-color: transparent;
         border-radius: 50%;
         transition : 5s ease;
@@ -204,7 +203,26 @@ a:hover {
         overflow: visible;
         min-height: 100%;
     }
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        position: sticky;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding:1%;
+        z-index: 100;
+        background-color: #05070F;
+    }
+    img[alt=logo] {
+        width: 80px;
+        background-color: transparent;
+        border-radius: 50%;
+        transition : 5s ease;
+    }
     h1 {
-        font-size: 0.8em;
+        font-size: 1.8em;
     }
 }
