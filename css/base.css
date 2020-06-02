@@ -6,8 +6,45 @@
             box-sizing: border-box;
     overflow: visible;
 }
-h1 {
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:1%;
+    z-index: 100;
+    background-color: #05070F;
+}
+img[alt=logo] {
+    height: 7%;
+    width: 7%;
     background-color: transparent;
+    border-radius: 50%;
+    transition : 5s ease;
+}
+img[alt=logo]:hover {
+    opacity:90%;
+    transform: rotate(0.5turn);
+    cursor: pointer;
+}
+h1 {
+    display: block;
+    text-align: right;
+    font-size: 3em; 
+    margin-right: 5%;
+    padding:1%;
+    -webkit-text-stroke: 1.8px #e3d985;
+    -webkit-text-fill-color: #1B613E;
+    background-color: transparent;
+    transition : 5s ease;
+}
+h1:hover {
+    transform: rotate3d(11, 52.0, 30.0, -10deg);
+    cursor: pointer;
 }
 
 .container {
@@ -36,6 +73,7 @@ iframe {
 }
 iframe:hover{
     opacity:100%;
+    transform: scale(1.1);
 }
 #main {
     display: -webkit-box;
@@ -89,7 +127,7 @@ a:hover {
             -ms-flex-flow: column wrap;
                 flex-flow: column wrap;
     }
-    video {
+    iframe {
         width:100%;
         height:80%;
         padding:0;
@@ -107,7 +145,15 @@ a:hover {
         right: 0;  
 }
 }
-
+@media screen and (max-width: 880px) {
+    * {
+        overflow: visible;
+        min-height: 100%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
 @media screen and (max-width: 480px) {
     * {
         overflow: visible;
@@ -120,7 +166,7 @@ a:hover {
             -ms-flex-flow: column wrap;
                 flex-flow: column wrap;
     }
-    video {
+    iframe {
         width:100%;
         height:80%;
         padding:0;
@@ -138,4 +184,12 @@ a:hover {
         bottom: 0;
         right: 0;
 }
+@media screen and (max-width: 350px) {
+    * {
+        overflow: visible;
+        min-height: 100%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
 }
