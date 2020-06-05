@@ -323,7 +323,7 @@ a:hover {
         display: flex;
         position: relative;
         flex-flow: column wrap;
-        bottom: 0;
+        margin-bottom: 0;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
