@@ -167,7 +167,7 @@ a:hover {
         transition : 1.5s ease-in-out;
     }
     p {
-        align-self: center;
+        font-size: 0.8em;
     }
 }
 @media screen and (max-width: 880px) {
