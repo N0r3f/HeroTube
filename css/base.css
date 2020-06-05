@@ -35,16 +35,12 @@ img[alt=logo] {
         align-self: flex-start;
     height: 4.5rem;
     width: 4.5rem;
+    margin-right: 2rem;
+    opacity: 80%;
     background-color: transparent;
-    -webkit-transition : 5s ease;
-    -o-transition : 5s ease;
-    transition : 5s ease;
 }
 img[alt=logo]:hover {
-    opacity:90%;
-    -webkit-transform: rotate(0.1turn);
-        -ms-transform: rotate(0.1turn);
-            transform: rotate(0.1turn);
+    opacity:100%;
     cursor: pointer;
 }
 p {
