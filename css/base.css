@@ -76,12 +76,14 @@ p {
         -ms-transform: scale(1.15);
             transform: scale(1.15);
 }
+acronym {
+    background-color: transparent;
+}
 .arrows {
     font-size: 2em;
     margin-right: 3.5rem;
     -webkit-text-stroke: 1.8px #e3d985;
     -webkit-text-fill-color: #1B613E;
-    background-color: transparent;
 }
 .arrows:hover {
     -webkit-transform: scale(1.2);
@@ -111,6 +113,7 @@ h1:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow: hidden;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -141,17 +144,19 @@ iframe:hover{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
+    position: fixed;
+    top: auto;
+    left: 0;
     bottom: 0;
+    right: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: center;
-    height: 8%;
+    height: 10%;
     width: 100%;
-    padding:2%;
     background-color: #05070F;
     color: #e3d985;
     -webkit-transition : 1.5s ease-in-out;
@@ -186,14 +191,13 @@ a:hover {
 
         width: 4rem;
     }
-    p.arrows {
+    .arrows {
         display: block;
         font-size: 2em;
         margin-left: 1rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
         -webkit-text-stroke: 1.8px #e3d985;
         -webkit-text-fill-color: #1B613E;
-        background-color: transparent;
     }
     .arrows:hover {
         -webkit-transform: scale(1.2);
@@ -202,6 +206,7 @@ a:hover {
     }
     h1 {
         font-size: 2em;
+        background-color: transparent;
     }
     .messageAlert {
         display: none;
@@ -210,6 +215,7 @@ a:hover {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        overflow: hidden;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-flow: column wrap;
@@ -309,7 +315,6 @@ a:hover {
         font-size: 1.2em;
         -webkit-text-stroke: 1.8px #e3d985;
         -webkit-text-fill-color: #1B613E;
-        background-color: transparent;
         -webkit-box-flex: 2;
             -ms-flex: 2;
                 flex: 2;
@@ -331,6 +336,7 @@ a:hover {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        overflow: hidden;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-flow: column wrap;
@@ -365,6 +371,7 @@ a:hover {
         display: -ms-flexbox;
         display: flex;
         position: relative;
+        bottom: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-flow: column wrap;
