@@ -4,7 +4,7 @@
     margin: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    overflow: visible;
+    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding:1%;
     z-index: 100;
     background-color: #05070F;
@@ -27,7 +27,6 @@ img[alt=logo] {
     background-color: transparent;
     border-radius: 50%;
     transition : 5s ease;
-    flex: 1;
 }
 img[alt=logo]:hover {
     opacity:90%;
@@ -43,24 +42,24 @@ p {
     background-color: transparent;
 }
 .messageAlert {
+    display: block;
     position: absolute;
     top: auto;
     left: auto;
     bottom: 0;
     right: auto;
+    padding: 1%;
+    width: 100%;
     text-align: center;
     font-size: 0.8em;
-    width: 100vw;
-    align-self: flex-start;
     -webkit-text-stroke: 0.5px #1B613E;
     -webkit-text-fill-color: #e3d985;
-    flex: 1;
+    z-index: 5;
 }
 .messageAlert:hover {
     transform: scale(1.15);
 }
 .arrows {
-    padding: 1rem;
     font-size: 2em;
     margin-right: 3.5rem;
     -webkit-text-stroke: 1.8px #e3d985;
@@ -74,8 +73,8 @@ p {
 h1 {
     display: block;
     font-size: 3em; 
-    margin-right: 5%;
-    padding:1%;
+    padding-right: 1rem;
+    margin-bottom: 2%;
     -webkit-text-stroke: 1.8px #e3d985;
     -webkit-text-fill-color: #1B613E;
     background-color: transparent;
@@ -154,89 +153,9 @@ a {
 a:hover {
     color: black;
 }
-
-@media screen and (max-width: 1024px) {
-    * {
-        overflow: visible;
-        min-height: 100%;
-    }
-    header {
-        display: flex;
-        flex-flow: row nowrap;
-        position: sticky;
-        align-items: center;
-        align-content: center;
-        justify-content: space-between;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 20%;
-        padding:1%;
-        z-index: 100;
-        background-color: #05070F;
-    }
-    img[alt=logo] {
-        width: 4rem;
-        background-color: transparent;
-        border-radius: 50%;
-        transition : 5s ease;
-    }
-    .container {
-        min-height: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: column wrap;
-                flex-flow: column wrap;
-    }
-    iframe {
-        width:100%;
-        height:100vh;
-        padding:0;
-    }
-    iframe:hover{
-        opacity:100%;
-        transform: scale(1);
-    }
-    h1 {
-        font-size: 3.7em;
-    }
-    #main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        flex-flow: column wrap;
-        position: relative;
-        bottom: 0;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        height: 8%;
-        width: 100%;
-        padding:2%;
-        background-color: #05070F;
-        color: #e3d985;
-        -webkit-transition : 1.5s ease-in-out;
-        -o-transition : 1.5s ease-in-out;
-        transition : 1.5s ease-in-out;
-    }
-    .messageAlert {
-        font-size: 0.5em;
-        width: 100%;
-        -webkit-text-stroke: 0.2px #1B613E;
-        -webkit-text-fill-color: #e3d985;
-    }
-    p {
-        font-size: 0.8em;
-        -webkit-text-stroke: 1.8px #e3d985;
-        -webkit-text-fill-color: #1B613E;
-    }
-}
 @media screen and (max-width: 880px) {
     * {
-        overflow: visible;
+        overflow-x: hidden;
         min-height: 100%;
     }
     img[alt=logo] {
@@ -248,6 +167,34 @@ a:hover {
     }
     .messageAlert {
         display: none;
+    }
+    .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    iframe {
+        padding: 1;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        opacity: 40%;
+    }
+    iframe:hover{
+        opacity:100%;
+        transform: scale(1.0);
     }
 }
 @media screen and (max-width: 450px) {
