@@ -1,0 +1,359 @@
+:root { /* declaration de variables */
+    box-sizing: border-box;
+    --premiere-couleur: rgb(19, 98, 218);
+    --deuxieme-couleur: rgb(55, 108, 223);
+    --troisieme-couleur: rgb(43, 91, 250);
+    --quatrieme-couleur: rgb(0, 81, 255);
+    --cinquieme-couleur: rgb(0, 119, 255);
+    --sixieme-couleur: rgb(41, 128, 228); 
+    --septieme-couleur: rgb(4, 86, 236);
+    --huitieme-couleur: rgb(15, 101, 231);
+    --neuvieme-couleur: rgb(0, 132, 255);
+}
+
+#disk {
+    animation: 10s ease-in-out disk infinite;
+}
+span {
+    position: fixed;
+    font-family: 'arial black';
+    border: 0.9rem solid white;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    animation: 2s ease bordered infinite;
+}
+.une { /* gestion des attributs par classe */
+    animation: 10s une;
+    opacity: 0;
+}
+.une:after {
+    content: "5";
+}
+.deux {
+    animation: 10s deux;
+    opacity: 0;
+}
+.deux:after {
+    content: "4";
+}
+.trois {
+    animation: 10s trois;
+    opacity: 0;
+}
+.trois:after {
+    content: "3";
+}
+.quatre {
+    animation: 10s quatre;
+    opacity: 0;
+}
+.quatre:after {
+    content: "2";
+}
+.cinq {
+    animation: 10s cinq;
+    opacity: 0;
+}
+.cinq:after {
+    content: "1";
+}
+@keyframes bordered {
+    from {box-shadow: 10px 15px 150px -8px gold;}
+    1% {box-shadow: 10px 15px 150px -8px gold;}
+    2% {box-shadow: 10px 15px 150px -8px gold;}
+    3% {box-shadow: 10px 15px 150px -8px gold;}
+    4% {box-shadow: 10px 15px 150px -8px gold;}
+    5% {box-shadow: 10px 15px 150px -8px gold;}
+    6% {box-shadow: 10px 15px 150px -8px gold;}
+    7% {box-shadow: 10px 15px 150px -8px gold;}
+    8% {box-shadow: 10px 15px 150px -8px gold;}
+    9% {box-shadow: 10px 15px 150px -8px gold;}
+    10% {box-shadow: 10px 15px 150px -8px gold;}
+    11% {box-shadow: 10px 15px 150px -8px gold;}
+    12% {box-shadow: 10px 15px 150px -8px gold;}
+    13% {box-shadow: 10px 15px 150px -8px gold;}
+    14% {box-shadow: 10px 15px 150px -8px gold;}
+    15% {box-shadow: 10px 15px 150px -8px gold;}
+    16% {box-shadow: 10px 15px 150px -8px gold;}
+    17% {box-shadow: 10px 15px 150px -8px gold;}
+    18% {box-shadow: 10px 15px 150px -8px gold;}
+    19% {box-shadow: 10px 15px 150px -8px gold;}
+    20% {box-shadow: 10px 15px 150px -8px gold;}
+    21% {box-shadow: 10px 15px 150px -8px gold;}
+    22% {box-shadow: 10px 15px 150px -8px gold;}
+    23% {box-shadow: 10px 15px 150px -8px gold;}
+    24% {box-shadow: 10px 15px 150px -8px gold;}
+    25% {box-shadow: 10px 15px 150px -8px gold;}
+    26% {box-shadow: 10px 15px 150px -8px gold;}
+    27% {box-shadow: 10px 15px 150px -8px gold;}
+    28% {box-shadow: 10px 15px 150px -8px gold;}
+    29% {box-shadow: 10px 15px 150px -8px gold;}
+    30% {box-shadow: 10px 15px 150px -8px gold;}
+    31% {box-shadow: 10px 15px 150px -8px gold;}
+    32% {box-shadow: 10px 15px 150px -8px gold;}
+    33% {box-shadow: 10px 15px 150px -8px gold;}
+    34% {box-shadow: 10px 15px 150px -8px gold;}
+    35% {box-shadow: 10px 15px 150px -8px gold;}
+    36% {box-shadow: 10px 15px 150px -8px gold;}
+    37% {box-shadow: 10px 15px 150px -8px gold;}
+    38% {box-shadow: 10px 15px 150px -8px gold;}
+    39% {box-shadow: 10px 15px 150px -8px gold;}
+    40% {box-shadow: 10px 15px 150px -8px gold;}
+    41% {box-shadow: 10px 15px 150px -8px gold;}
+    42% {box-shadow: 10px 15px 150px -8px gold;}
+    43% {box-shadow: 10px 15px 150px -8px gold;}
+    44% {box-shadow: 10px 15px 150px -8px gold;}
+    45% {box-shadow: 10px 15px 150px -8px gold;}
+    46% {box-shadow: 10px 15px 150px -8px gold;}
+    47% {box-shadow: 10px 15px 150px -8px gold;}
+    48% {box-shadow: 10px 15px 150px -8px gold;}
+    49% {box-shadow: 10px 15px 150px -8px gold;}
+    50% {box-shadow: 10px 15px 150px -8px gold;}
+    51% {box-shadow: 10px 15px 150px -8px gold;}
+    52% {box-shadow: 10px 15px 150px -8px gold;}
+    53% {box-shadow: 10px 15px 150px -8px gold;}
+    54% {box-shadow: 10px 15px 150px -8px gold;}
+    55% {box-shadow: 10px 15px 150px -8px gold;}
+    56% {box-shadow: 10px 15px 150px -8px gold;}
+    57% {box-shadow: 10px 15px 150px -8px gold;}
+    58% {box-shadow: 10px 15px 150px -8px gold;}
+    59% {box-shadow: 10px 15px 150px -8px gold;}
+    60% {box-shadow: 10px 15px 150px -8px gold;}
+    61% {box-shadow: 10px 15px 150px -8px gold;}
+    62% {box-shadow: 10px 15px 150px -8px gold;}
+    63% {box-shadow: 10px 15px 150px -8px gold;}
+    64% {box-shadow: 10px 15px 150px -8px gold;}
+    65% {box-shadow: 10px 15px 150px -8px gold;}
+    66% {box-shadow: 10px 15px 150px -8px gold;}
+    67% {box-shadow: 10px 15px 150px -8px gold;}
+    68% {box-shadow: 10px 15px 150px -8px gold;}
+    69% {box-shadow: 10px 15px 150px -8px gold;}
+    70% {box-shadow: 10px 15px 150px -8px gold;}
+    71% {box-shadow: 10px 15px 150px -8px gold;}
+    72% {box-shadow: 10px 15px 150px -8px gold;}
+    73% {box-shadow: 10px 15px 150px -8px gold;}
+    74% {box-shadow: 10px 15px 150px -8px gold;}
+    75% {box-shadow: 10px 15px 150px -8px gold;}
+    76% {box-shadow: 10px 15px 150px -8px gold;}
+    77% {box-shadow: 10px 15px 150px -8px gold;}
+    78% {box-shadow: 10px 15px 150px -8px gold;}
+    79% {box-shadow: 10px 15px 150px -8px gold;}
+    80% {box-shadow: 10px 15px 150px -8px gold;}
+    81% {box-shadow: 10px 15px 150px -8px gold;}
+    82% {box-shadow: 10px 15px 150px -8px gold;}
+    83% {box-shadow: 10px 15px 150px -8px gold;}
+    84% {box-shadow: 10px 15px 150px -8px gold;}
+    85% {box-shadow: 10px 15px 150px -8px gold;}
+    86% {box-shadow: 10px 15px 150px -8px gold;}
+    87% {box-shadow: 10px 15px 150px -8px gold;}
+    88% {box-shadow: 10px 15px 150px -8px gold;}
+    89% {box-shadow: 10px 15px 150px -8px gold;}
+    90% {box-shadow: 10px 15px 150px -8px gold;}
+    91% {box-shadow: 10px 15px 150px -8px gold;}
+    92% {box-shadow: 10px 15px 150px -8px gold;}
+    93% {box-shadow: 10px 15px 150px -8px gold;}
+    94% {box-shadow: 10px 15px 150px -8px gold;}
+    95% {box-shadow: 10px 15px 150px -8px gold;}
+    96% {box-shadow: 10px 15px 150px -8px gold;}
+    97% {box-shadow: 10px 15px 150px -8px gold;}
+    98% {box-shadow: 10px 15px 150px -8px gold;}
+    99% {box-shadow: 10px 15px 150px -8px gold;}
+    to {box-shadow: 10px 15px 150px -8px gold;}
+}
+@keyframes une {
+    0.99% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        opacity: 80%;
+        transform: scale(1.1);
+    }
+    19.98% {
+        opacity: 80%;
+        transform: scale(1.5);
+    }
+    19.99% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes deux {
+    19.99% {
+        display: none;
+        opacity: 0;
+    }
+    20% {
+        opacity: 80%;
+        transform: scale(1.1);
+    }
+    39.98% {
+        opacity: 80%;
+        transform: scale(1.5);
+    }
+    39.99% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes trois {
+    39.99% {
+        display: none;
+        opacity: 0;
+    }
+    40% {
+        opacity: 80%;
+        transform: scale(1.1);
+    }
+    59.98% {
+        opacity: 80%;
+        transform: scale(1.5);
+    }   
+    59.99% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes quatre {
+    59.99% {
+        display: none;
+        opacity: 0;
+    }
+    60% {
+        opacity: 80%;
+        transform: scale(1.1);
+    }
+    79.98% {
+        opacity: 80%;
+        transform: scale(1.5);
+    }
+    79.99% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes cinq {
+    79.99% {
+        display: none;
+        opacity: 0;
+    }
+    80% {
+        opacity: 80%;
+        transform: scale(1.1);
+    }
+    99.98% {
+        opacity: 80%;
+        transform: scale(1.5);
+    }
+    99.99% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes disk {
+    from {opacity: 70%; background: linear-gradient(0turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    1% {opacity: 70%; background: linear-gradient(0.01turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    2% {opacity: 70%; background: linear-gradient(0.02turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    3% {opacity: 70%; background: linear-gradient(0.03turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    4% {opacity: 70%; background: linear-gradient(0.04turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    5% {opacity: 70%; background: linear-gradient(0.05turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    6% {opacity: 60%; background: linear-gradient(0.06turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    7% {opacity: 60%; background: linear-gradient(0.07turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    8% {opacity: 60%; background: linear-gradient(0.08turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    9% {opacity: 60%; background: linear-gradient(0.09turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    10% {opacity: 60%; background: linear-gradient(0.10turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    11% {opacity: 60%; background: linear-gradient(0.11turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    12% {opacity: 70%; background: linear-gradient(0.12turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    13% {opacity: 70%; background: linear-gradient(0.13turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    14% {opacity: 70%; background: linear-gradient(0.14turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    15% {opacity: 70%; background: linear-gradient(0.15turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    16% {opacity: 70%; background: linear-gradient(0.16turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    17% {opacity: 70%; background: linear-gradient(0.17turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    18% {opacity: 60%; background: linear-gradient(0.18turn, var(--huitieme-couleur), var(--sixieme-couleur));}
+    19% {opacity: 60%; background: linear-gradient(0.19turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    20% {opacity: 60%; background: linear-gradient(0.20turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    21% {opacity: 60%; background: linear-gradient(0.21turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    22% {opacity: 60%; background: linear-gradient(0.22turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    23% {opacity: 60%; background: linear-gradient(0.23turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    24% {opacity: 60%; background: linear-gradient(0.24turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    25% {opacity: 70%; background: linear-gradient(0.25turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    26% {opacity: 70%; background: linear-gradient(0.26turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    27% {opacity: 70%; background: linear-gradient(0.27turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    28% {opacity: 70%; background: linear-gradient(0.28turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    29% {opacity: 70%; background: linear-gradient(0.29turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    30% {opacity: 70%; background: linear-gradient(0.30turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    31% {opacity: 80%; background: linear-gradient(0.31turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    32% {opacity: 80%; background: linear-gradient(0.32turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    33% {opacity: 80%; background: linear-gradient(0.33turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    34% {opacity: 80%; background: linear-gradient(0.34turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    35% {opacity: 80%; background: linear-gradient(0.35turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    36% {opacity: 80%; background: linear-gradient(0.36turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    37% {opacity: 70%; background: linear-gradient(0.37turn, var(--troisieme-couleur), var(--quatrieme-couleur));}
+    38% {opacity: 70%; background: linear-gradient(0.38turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    39% {opacity: 70%; background: linear-gradient(0.39turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    40% {opacity: 70%; background: linear-gradient(0.40turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    41% {opacity: 70%; background: linear-gradient(0.41turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    42% {opacity: 70%; background: linear-gradient(0.42turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    43% {opacity: 60%; background: linear-gradient(0.43turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    44% {opacity: 60%; background: linear-gradient(0.44turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    45% {opacity: 60%; background: linear-gradient(0.45turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    46% {opacity: 60%; background: linear-gradient(0.46turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    47% {opacity: 60%; background: linear-gradient(0.47turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    48% {opacity: 60%; background: linear-gradient(0.48turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    49% {opacity: 70%; background: linear-gradient(0.49turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    50% {opacity: 70%; background: linear-gradient(0.50turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    51% {opacity: 70%; background: linear-gradient(0.51turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    52% {opacity: 70%; background: linear-gradient(0.52turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    53% {opacity: 70%; background: linear-gradient(0.53turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    54% {opacity: 70%; background: linear-gradient(0.54turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    55% {opacity: 80%; background: linear-gradient(0.55turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    56% {opacity: 80%; background: linear-gradient(0.56turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    57% {opacity: 80%; background: linear-gradient(0.57turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    58% {opacity: 80%; background: linear-gradient(0.58turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    59% {opacity: 80%; background: linear-gradient(0.59turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    60% {opacity: 80%; background: linear-gradient(0.60turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    61% {opacity: 90%; background: linear-gradient(0.61turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    62% {opacity: 90%; background: linear-gradient(0.62turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    63% {opacity: 90%; background: linear-gradient(0.63turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    64% {opacity: 90%; background: linear-gradient(0.64turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    65% {opacity: 90%; background: linear-gradient(0.65turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    66% {opacity: 90%; background: linear-gradient(0.66turn, var(--cinquieme-couleur), var(--sixieme-couleur));}
+    67% {opacity: 80%; background: linear-gradient(0.67turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    68% {opacity: 80%; background: linear-gradient(0.68turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    69% {opacity: 80%; background: linear-gradient(0.69turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    70% {opacity: 80%; background: linear-gradient(0.70turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    71% {opacity: 80%; background: linear-gradient(0.71turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    72% {opacity: 80%; background: linear-gradient(0.72turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    73% {opacity: 70%; background: linear-gradient(0.73turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    74% {opacity: 70%; background: linear-gradient(0.74turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    75% {opacity: 70%; background: linear-gradient(0.75turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    76% {opacity: 70%; background: linear-gradient(0.76turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    77% {opacity: 70%; background: linear-gradient(0.77turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    78% {opacity: 70%; background: linear-gradient(0.78turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    79% {opacity: 60%; background: linear-gradient(0.79turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    80% {opacity: 60%; background: linear-gradient(0.80turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    81% {opacity: 60%; background: linear-gradient(0.81turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    82% {opacity: 60%; background: linear-gradient(0.82turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    83% {opacity: 60%; background: linear-gradient(0.83turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    84% {opacity: 60%; background: linear-gradient(0.84turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    85% {opacity: 70%; background: linear-gradient(0.85turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    86% {opacity: 70%; background: linear-gradient(0.86turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    87% {opacity: 70%; background: linear-gradient(0.87turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    88% {opacity: 70%; background: linear-gradient(0.88turn, var(--sixieme-couleur), var(--septieme-couleur));}
+    89% {opacity: 70%; background: linear-gradient(0.89turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    90% {opacity: 70%; background: linear-gradient(0.90turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    91% {opacity: 80%; background: linear-gradient(0.91turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    92% {opacity: 80%; background: linear-gradient(0.92turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    93% {opacity: 80%; background: linear-gradient(0.93turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    94% {opacity: 80%; background: linear-gradient(0.94turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    95% {opacity: 80%; background: linear-gradient(0.95turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    96% {opacity: 80%; background: linear-gradient(0.96turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    97% {opacity: 70%; background: linear-gradient(0.97turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    98% {opacity: 70%; background: linear-gradient(0.98turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    99% {opacity: 70%; background: linear-gradient(0.99turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+    to {opacity: 70%; background: linear-gradient(0turn, var(--huitieme-couleur), var(--neuvieme-couleur));}
+}

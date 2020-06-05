@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    padding:1%;
+    padding:1rem;
     z-index: 100;
     background-color: #05070F;
 }
@@ -33,25 +33,23 @@ img[alt=logo] {
     display: block;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    height: 4rem;
-    width: 4rem;
+    height: 4.5rem;
+    width: 4.5rem;
     background-color: transparent;
-    border-radius: 50%;
     -webkit-transition : 5s ease;
     -o-transition : 5s ease;
     transition : 5s ease;
 }
 img[alt=logo]:hover {
     opacity:90%;
-    -webkit-transform: rotate(0.5turn);
-        -ms-transform: rotate(0.5turn);
-            transform: rotate(0.5turn);
+    -webkit-transform: rotate(0.1turn);
+        -ms-transform: rotate(0.1turn);
+            transform: rotate(0.1turn);
     cursor: pointer;
 }
 p {
     padding: 0.5rem;
     font-size: 2em;
-    color: black;
     -webkit-text-stroke: 1.8px #e3d985;
     -webkit-text-fill-color: #1B613E;
     background-color: transparent;
