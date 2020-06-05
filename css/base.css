@@ -64,7 +64,6 @@ p {
 }
 h1 {
     display: block;
-    align-self: flex-end;
     font-size: 3em; 
     margin-right: 5%;
     padding:1%;
@@ -154,7 +153,7 @@ a:hover {
     }
     header {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         position: sticky;
         align-items: center;
         align-content: center;
@@ -168,8 +167,8 @@ a:hover {
         background-color: #05070F;
     }
     img[alt=logo] {
-        height: 10%;
-        width: 10%;
+        height: 50%;
+        width: 50%;
         background-color: transparent;
         border-radius: 50%;
         transition : 5s ease;
@@ -183,8 +182,12 @@ a:hover {
     }
     iframe {
         width:100%;
-        height:80%;
+        height:100vh;
         padding:0;
+    }
+    iframe:hover{
+        opacity:100%;
+        transform: scale(1);
     }
     h1 {
         font-size: 3.7em;
