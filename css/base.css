@@ -66,9 +66,9 @@ p {
     z-index: 5;
 }
 .messageAlert:hover {
-    -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 acronym {
     background-color: transparent;
